@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Minhas Séries</string>
+    <string name="title_activity_main">Minhas Séries</string>
+    <string name="package_name">com.williannunes.minhasseries</string>
+    <string name="custom_url_scheme">com.williannunes.minhasseries</string>
+</resources>

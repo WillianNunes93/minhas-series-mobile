@@ -1,0 +1,9 @@
+{
+  "appId": "com.williannunes.minhasseries",
+  "appName": "Minhas Séries",
+  "webDir": "www",
+  "server": {
+    "url": "https://williannunes93.github.io/minhas-series/",
+    "cleartext": false
+  }
+}
