@@ -1,0 +1,44 @@
+name: Build APK
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Build debug APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: minhas-series-debug-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Publish/update release with the APK
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Minhas Séries — última versão"
+          body: |
+            APK gerado automaticamente a partir do código mais recente.
+            Baixe "app-debug.apk" abaixo e instale no Android (pode precisar permitir "instalar de fontes desconhecidas").
+          files: android/app/build/outputs/apk/debug/app-debug.apk
