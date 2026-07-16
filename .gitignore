@@ -10,3 +10,5 @@ android/app/debug/
 keystore-backup/
 android/app/release.keystore
 *.keystore
+build-para-upload/
+*.aab
