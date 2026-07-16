@@ -1,0 +1,9 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monitor screen -->
+  <rect x="272" y="332" width="480" height="320" rx="28" fill="none" stroke="#ffffff" stroke-width="26"/>
+  <!-- Play triangle -->
+  <path d="M470 430 L470 554 L578 492 Z" fill="#ffffff"/>
+  <!-- Stand -->
+  <rect x="472" y="652" width="80" height="46" rx="10" fill="#ffffff"/>
+  <rect x="422" y="698" width="180" height="26" rx="13" fill="#ffffff"/>
+</svg>
