@@ -1,0 +1,19 @@
+<svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="500" fill="url(#bg)"/>
+
+  <g transform="translate(70,90) scale(0.32)">
+    <rect x="272" y="332" width="480" height="320" rx="28" fill="none" stroke="#ffffff" stroke-width="26"/>
+    <path d="M470 430 L470 554 L578 492 Z" fill="#ffffff"/>
+    <rect x="472" y="652" width="80" height="46" rx="10" fill="#ffffff"/>
+    <rect x="422" y="698" width="180" height="26" rx="13" fill="#ffffff"/>
+  </g>
+
+  <text x="420" y="245" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff">Minhas Séries</text>
+  <text x="420" y="298" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#e9e3fb">Organize suas séries por distribuidora</text>
+</svg>
